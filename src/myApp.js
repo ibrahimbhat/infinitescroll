@@ -4,7 +4,7 @@
 /**
  * infinitescroller module that includes the public module as a dependency
  */
-var app=angular.module('myApp', ['common','infiniteScroll'])
+var app=angular.module('myApp', ['common'])
 .controller('myCtrl', myCtrl);      
 
 myCtrl.$inject = ['$scope','RedditService'];

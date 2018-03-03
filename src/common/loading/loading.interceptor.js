@@ -5,13 +5,7 @@ angular.module('common')
 .factory('loadingHttpInterceptor', LoadingHttpInterceptor);
 
 LoadingHttpInterceptor.$inject = ['$rootScope', '$q'];
-/**
- * Tracks when a request begins and finishes. When a
- * request starts, a progress event is emitted to allow
- * listeners to determine when a request has been initiated.
- * When the response completes or a response error occurs,
- * we assume the request has ended and emit a finish event.
- */
+
 function LoadingHttpInterceptor($rootScope, $q) {
 
   var loadingCount = 0;
